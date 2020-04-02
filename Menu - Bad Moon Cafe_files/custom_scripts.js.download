@@ -1,0 +1,37 @@
+(function ($, root, undefined) {
+	
+	$(function () {
+		
+		'use strict';
+
+		//Code to toggle mobile menu
+		$('.menu-toggle').on("click", function () {
+			$('#quadmenu').toggle('slow');
+		});
+		
+		// Event page ticket availability
+		var $availability_table = $('.bookings-availability-table');
+		var $product = $availability_table.data('product');
+		var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		
+		if($availability_table && $product) {
+		    $.ajax('/wp-json/wc-bookings/v1/products/slots?max_date=2030-12-31&product_ids=' + $product, {
+		       success: function(data) {
+		            var dates = data.records;
+		            var html = '';
+		            $.each(dates, function( index, value ) {
+		                var date = new Date(value.date);
+		                var dateStr = [date.getDate(), monthNames[date.getMonth()], date.getFullYear()].join(' ');
+		                var row = '<tr><td>' + dateStr + '</td><td>' + value.available + '</td></tr>';
+		                html += row;
+		            });
+		            $availability_table.append(html);
+		       },
+		           error: function(error) {
+		           console.error(error);
+		       }
+		    });
+		}
+
+	});
+})(jQuery, this);

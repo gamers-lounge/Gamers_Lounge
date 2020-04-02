@@ -1,0 +1,404 @@
+/*
+	Theme Name: Bad Moon Cafe
+	Description: Bad Moon Cafe based on Astra Theme
+	Version: 1
+	Author: Tim Tunnicliff (@ttunnicliff)
+	Author URI: https://timtunnicliff.co.uk
+	Template: astra
+	License: MIT
+	License URI: https://opensource.org/licenses/mit-license.php
+*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700&display=swap');
+
+body {
+	font-family: "Open Sans", Sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Proza Libre", Sans-serif;
+    text-transform: uppercase;
+}
+.badmoon-quicksand * {
+    font-family: 'Quicksand', sans-serif !important;
+}
+:root {
+	--primary-color: #252525;
+	--highlight-color: #EA555E;
+}
+.menu-toggle, button, .ast-button, .button, input#submit, input[type="button"], input[type="submit"], input[type="reset"] {
+    border-radius: 0;
+    padding: 10px 40px;
+    color: #ffffff;
+    border: none;
+    background-color: var(--highlight-color);
+}
+#primary {
+	margin: 0;
+}
+#centrebutton {
+	margin: 0 auto;
+}
+.account_menu_class {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 900;
+}
+#menu-account {
+	list-style: none;
+	width: 220px;
+}
+#menu-account li {
+	float: right;
+
+}
+#menu-account input[type="submit"] {
+	display: none;
+
+}
+#menu-account input[type="text"] {
+	width: 220px;
+}
+.home .star-rating {
+	display: none;
+}
+
+ul.product_list_widget {
+    list-style: none;
+    margin-left: 0;
+}
+ul.product_list_widget li {
+	width: 25.33%;
+	margin: 0 3.5%;
+    float: left;
+}
+.wc_bookings_field_start_date {
+	width: 100%;
+}
+#slotscontainer {
+	background-color: #eee;
+	padding: 40px;
+    height: 400px;
+}
+.wc-bookings-date-picker {
+    margin-bottom: 40px;
+}
+.wc-bookings-date-picker .ui-icon-circle-triangle-e, .wc-bookings-date-picker .ui-icon-circle-triangle-w {
+	background-image: url(images/ui-icons_444444_256x240.png);
+}
+#single-datefirst {
+	display: none;
+    width: 35%;
+    float: right;
+    margin: 0px;
+}
+#datefirst-products {
+	clear: both;
+	display: flex;
+	flex-flow: row wrap;
+	background-color: #eee;
+    margin-bottom: 40px;
+}
+.datefirst_product {
+	width: 44%;
+    margin: 3%;
+}
+.entry-content .datefirst_product p.product_title {
+    margin-bottom: .2em;
+}
+button.slotbutton {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    background-color: var(--highlight-color);
+    border: none;
+    border-radius: 25px;
+}
+button.slotbutton:disabled {
+    background-color: #ccc;
+}
+.overlay {
+	position: relative;
+}
+.overlay>div::after {
+	content:'';
+	position:absolute;
+	width:100%; 
+	height:100%;
+	top:0; 
+	left:0;
+	background:rgba(0,0,0,0.4);
+}
+.menu-main-cat {
+	font-weight: bold;
+	text-decoration: underline!important;
+}
+.menu-main-cat a {
+	font-size: 1.2em;
+}
+.quadmenu-item-content>.quadmenu-text {
+	padding: 0px 10px 3px 10px;
+	border-bottom: 1px solid transparent;
+}
+.quadmenu-item-content>.quadmenu-text:hover {
+	border-bottom: 1px solid var(--primary-color);
+}
+#quadmenu .quadmenu-navbar-nav li.quadmenu-item .quadmenu-item-content {
+	padding: 7px !important; 
+}
+#quadmenu.quadmenu-default_theme.quadmenu-is-horizontal .quadmenu-navbar-nav .quadmenu-dropdown-menu li.quadmenu-item:not(.quadmenu-item-type-tab):not(:last-child):not(:only-child) > a {
+	border: none !important;	
+
+}
+#quadmenu.quadmenu-is-horizontal .quadmenu-navbar-nav li.quadmenu-dropdown>.quadmenu-dropdown-menu.quadmenu-dropdown-stretch-dropdown>ul, #quadmenu.quadmenu-is-horizontal .quadmenu-navbar-nav li.quadmenu-dropdown>.quadmenu-dropdown-menu.quadmenu-dropdown-stretch-dropdown>.quadmenu-dropdown-background {
+	margin-left: 0px !important;
+}
+.headerbutton {
+	display: inline-block;
+}
+.searchform {
+	display: none;
+}
+#quadmenu {
+	display: none;
+	box-shadow: none!important;
+}
+#menu-account li a {
+    color: var(--primary-color);
+}
+.tt-banner .elementor-widget-heading, .tt-banner .elementor-widget-heading .elementor-widget-container {
+	height: 100%;
+}
+.tt-banner h3 {
+	position: absolute;
+	bottom: 0px;
+}
+.footer-adv-layout-4 .footer-adv-overlay {
+	padding-bottom: 0;
+}
+.footer-adv-layout-4 .footer-adv-overlay .ast-container {
+	border-bottom: 2px solid #fff;
+    padding-bottom: 30px;
+}
+.footer-adv-layout-4 .elementor-social-icon-twitter, .footer-adv-layout-4 .elementor-social-icon-instagram, .footer-adv-layout-4 .elementor-social-icon-facebook {
+	background-color: #fff;
+}
+.footer-adv-layout-4 .elementor-shape-rounded .elementor-icon.elementor-social-icon {
+	border-radius: 25%;
+}
+.social-icons-wrapper .fa {
+	background-color: #eaeaea;
+    color: var(--primary-color);
+    padding: 4px 6px;
+    font-size: 2em;
+    border-radius: 6px;
+	width: 38px;
+    margin-right: 10px;
+    text-align: center;
+}
+.site-footer a.fa:focus, .site-footer a.fa:hover {
+    color: var(--primary-color);
+}
+.already-booked div p {
+	opacity: 0.5;
+}
+.already-booked div h4 {
+	text-align: center;
+}
+.dis_date_product {
+	margin-top: 40px;
+}
+.datepicker-container {
+	width: 60%;
+    float: left;
+    margin-bottom: 40px;
+}
+.datepicker-container h4, #single-datefirst h4 {
+	text-align: center;
+}
+.wc-bookings-date-picker {
+	background-color: #EBEBEB;
+}
+.wc-bookings-date-picker .ui-widget-content {
+	background: transparent;
+	box-shadow: none;
+}
+.wc-bookings-date-picker .ui-datepicker-header {
+	background: transparent;
+	border-top: none;
+	color: var(--primary-color);
+}
+.wc-bookings-date-picker .ui-datepicker .ui-datepicker-next, .wc-bookings-date-picker .ui-datepicker .ui-datepicker-prev {
+	background: transparent;	
+}
+.wc-bookings-date-picker .ui-datepicker-calendar {
+	border: none;
+}
+.wc-bookings-date-picker .ui-datepicker-calendar th {
+	color: var(--primary-color);
+	border: none;
+	background: transparent;	
+}
+.wc-bookings-date-picker .ui-datepicker td {
+	border: none;
+	background: transparent;
+}
+.wc-bookings-date-picker .ui-datepicker-current-day {
+	width: 50px;
+}
+.wc-bookings-date-picker .ui-datepicker td.ui-datepicker-current-day a {
+	border-radius: 25px;
+	background-color: var(--highlight-color)!important;
+	color: #fff;
+}
+.woocommerce ul.products li.product_cat-event-tickets .star-rating, .woocommerce ul.products li.product_cat-event-tickets .star-rating, .woocommerce ul.products li.product_cat-event-tickets .ast-woo-product-category, .woocommerce ul.products li.product_cat-event-tickets a.button, .woocommerce div.product_cat-event-tickets .product_meta {
+    display: none;
+}
+.event-price {
+	text-transform: capitalize;
+	font-size: 0.8em;
+}
+.woocommerce ul.products li.product_cat-event-tickets .ast-shop-product-out-of-stock {
+    bottom: auto;
+    width: auto;
+    left: auto;
+    padding: 5px 20px;
+    right: 0;
+    top: 10px;    
+	text-transform: initial;
+    color: #fff;
+    background: var(--highlight-color);
+    border-radius: 5px 0 0 5px;
+}
+.woocommerce div.product_cat-event-tickets .out-of-stock {
+    color: #fff;
+    background: #1D289A;
+    padding: 5px 20px;
+    display: inline-block;
+}
+.woocommerce ul.products li.product_cat-event-tickets .woocommerce-loop-product__link:hover .ast-shop-product-out-of-stock, .woocommerce ul.products li.product_cat-event-tickets .woocommerce-loop-product__link:hover .ast-shop-product-out-of-stock {
+    background: #1D289A;
+}
+.home .woocommerce ul.products li.product_cat-event-tickets .astra-shop-summary-wrap, .titlewrap {
+    border-left: 2px solid #fff;
+}
+.woocommerce ul.products li.product_cat-event-tickets .astra-shop-summary-wrap, .titlewrap {
+    margin-left: 45px;
+    border-left: 2px solid #aaa;
+    padding: 5px 10px 20px 15px;
+}
+.home .woocommerce ul.products li.product_cat-event-tickets .astra-shop-summary-wrap h2 {
+	color: #fff;
+}
+.woocommerce ul.products li.product_cat-event-tickets .astra-shop-summary-wrap h2 {
+    text-transform: none;
+    font-size: 1.2em;
+}
+.home .woocommerce ul.products li.product_cat-event-tickets .astra-shop-summary-wrap .price {
+	color: #fff;
+}
+.woocommerce ul.products li.product_cat-event-tickets .astra-shop-summary-wrap .price {
+    font-weight: normal;
+}
+.woocommerce ul.products li.product_cat-event-tickets .event-date {
+    color: var(--highlight-color);
+}
+.home .woocommerce ul.products li.product_cat-event-tickets .event-date {
+    color: #fff;
+}
+.elementor-post__title .event-date, .woocommerce ul.products li.product_cat-event-tickets .event-date {
+    position: absolute;
+    font-weight: bold;
+    width: 45px;
+    padding-top: 5px;
+}
+.woocommerce ul.products li.product_cat-event-tickets .event-date {
+    font-size: 1.2em;
+}
+.event-date p {
+    margin: 0;
+    line-height: 1.3em;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+p.product-shipping-class {
+    background-color: var(--highlight-color);
+    display: inline-block;
+    padding: 6px 17px;
+    border-radius: 15px;
+    color: #fff;
+}
+.woocommerce a.button, .woocommerce button.button, .woocommerce .woocommerce-message a.button, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce input.button, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled], .woocommerce input.button:disabled:hover, .woocommerce input.button:disabled[disabled]:hover, .woocommerce #respond input#submit, .woocommerce button.button.alt.disabled {
+    color:#fff;
+}
+.woocommerce span.onsale {
+    color: #fff;
+}
+@media only screen and (max-width:768px) {
+	ul.product_list_widget li {
+		width: 90%;
+		margin: 0 5%;
+	    float: left;
+	}
+/*Remove background images for mobile*/
+	.elementor-4 .elementor-element.elementor-element-8b31af2 {
+		background: transparent!important;
+	}
+	.ast-col-xs-12 {
+		text-align: center;
+	}
+	.quadmenu-row {
+		margin-left: 0;
+	}
+	.datepicker-container, #single-datefirst, .datefirst_product {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width:922px) {
+	.searchform {
+		display: block;
+	}
+	#quadmenu {
+		display: block;
+	}
+}
+
+
+.elementor-widget-posts .elementor-post__title, .elementor-widget-posts .elementor-post__title a {
+    color: #fff;
+}
+
+.wc-bookings-availability-popover-container-title em {
+	display: none !important;
+}
+
+.wc-bookings-availability-book-button {
+	font-size: 0 !important;
+}
+
+.wc-bookings-availability-book-button::before {
+	font-size: 16px !important;
+	content: "Details";
+}
+
+.badmoon-event--no-booking-form .entry-summary form.cart {
+	display: none;
+}
+
+.bookings-availability-table {
+    width: 100%;
+    padding: 5px;
+    border-collapse: collapse;
+    border: 0;
+    background-color: #ebebeb;
+    margin: 15px 0;
+}
+
+.bookings-availability-table tr:nth-child(even) td {
+    background-color: #fafafa;
+}
+
+.bookings-availability-table td {
+    border: solid #000;
+    border-width: 1px 0;
+}
