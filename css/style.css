@@ -17,7 +17,7 @@ body{
 	background:#FFFFFF;
 }
 .banner{
-	background: url(../images/1.jpg) no-repeat 0px 0px;
+	background: url(../img/bg-img/4.jpg) no-repeat 0px 0px;
     background-size: cover;
 }
 .agileinfo-dot{
@@ -452,6 +452,38 @@ body{
 	margin:3em 0 0 0;
 }
 /*-- //markets --*/
+/* :: 6.0 Games Area CSS */
+.single-games-area {
+	position: relative;
+	z-index: 1; }
+	.single-games-area::after {
+	  content: '';
+	  width: 2px;
+	  height: 100%;
+	  background-color: #cdcdcd;
+	  top: 0;
+	  right: -6.5px;
+	  position: absolute;
+	  z-index: 1; }
+	  @media only screen and (max-width: 767px) {
+		.single-games-area::after {
+		  display: none; } }
+	.single-games-area img {
+	  max-height: 55px;
+	  margin: 0 auto;
+	  display: block; }
+	  @media only screen and (min-width: 768px) and (max-width: 991px) {
+		.single-games-area img {
+		  max-height: 40px; } }
+	  @media only screen and (max-width: 767px) {
+		.single-games-area img {
+		  max-height: 40px; } }
+  
+  .games-area {
+	position: relative;
+	z-index: 1; }
+	.games-area .col-12:last-child .single-games-area:after {
+	  display: none; }
 /*-- portfolio --*/
 .filtr-item {
 	padding: 0;
